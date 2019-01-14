@@ -71,7 +71,6 @@ FundsXML_*.xml
 out
 .gradle
 .idea
-gradle
 build/classes/
 build/distributions/V413-Import-1.0-SNAPSHOT.zip
 build/distributions/V413-Import-1.0-SNAPSHOT/bin/V413-Import
