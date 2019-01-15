@@ -51,8 +51,24 @@ If you have any questions (or found a bug) feel free to raise an Issue.
 
 
 
+## Java
+
+1. [Simple Create and Read File.](https://github.com/karlkauc/FundsXML/tree/master/codeExamples/java/V413) 
+   Version: 4.1.3
+   Build tool: Gradle
+2. 
 
 
-##### Links
 
-Please visit [fundsxml.org](http://www.fundsxml.org/) for additional information.
+
+
+# Links
+
+- [fundsxml.org](http://www.fundsxml.org/)
+  Official home of FundsXML. Registration for membership. International newsletter.
+- [fundsxml.at](http://www.fundsxml.at)
+  Austrian site of the FundsXML standard. Local newsletter. German speaking community. 
+- [schema.fundsxml.at](http://schema.fundsxml.at)
+  Permalinks for all supported schema versions. Can be used for schema validation. 
+- [www.xml-tools.net/fundsxml/schemaviewer.html](http://www.xml-tools.net/fundsxml/schemaviewer.html)
+  Online schema viewer (browser based). 
