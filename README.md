@@ -54,8 +54,8 @@ If you have any questions (or found a bug) feel free to raise an Issue.
 ## Java
 
 1. [Simple Create and Read File.](https://github.com/karlkauc/FundsXML/tree/master/codeExamples/java/V413) 
-   Version: 4.1.3
-   Build tool: Gradle
+   Version: 4.1.3  
+   Build tool: Gradle   
 2. 
 
 
