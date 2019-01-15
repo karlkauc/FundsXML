@@ -42,6 +42,17 @@ The organisation FundsXML.org administrates the XML patterns with the aim to est
 
 
 
+# Code Examples
+
+This site contains some code examples in different programming languages for working with FundsXML files. 
+
+All files are provided under the Apache 2.0 license. They can be used without warranty - also in commercial  purpose.
+If you have any questions (or found a bug) feel free to raise an Issue.
+
+
+
+
+
 ##### Links
 
 Please visit [fundsxml.org](http://www.fundsxml.org/) for additional information.
