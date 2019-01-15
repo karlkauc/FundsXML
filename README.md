@@ -12,27 +12,19 @@
 
 
 
-##### FundsXML is transporting:
+It is based on XML and activly maintained by an international FundsXML community. 
 
-- Fund Static Data (Name, Identifiers, Type, Manager, Administrator, …)
-- Fund Dynamic Data (Total Net Asset Values, Risk Figures, Break Downs, …)
-- Portfolio Data (Holdings, Transactions, Earnings, …)
-- Share Class Data (ISIN, Type, Net Asset Values, Performance, Subs/Reds, …)
-- Asset Management Company Dynamic Data
-- Asset Master Data (Details of Securities, Derivatives and OTC Instruments)
-- Regulatory Reporting (MiFID II/EMT, EMIR, KIID, PRIIPS/EPT/CEPT, Solvency II/TPT, …)
-- Documents (Factsheet, KIID, Prospectus, Reports, …)
-- Country Specific Data
+Other financial industry standards based on XML include:
+
+- [FpML](http://www.fpml.org/)
+- [FIXML](https://www.fixtrading.org/standards/fixml/)
+- [eXtensible Business Reporting Language](https://www.xbrl.org/)
+- [Open Financial Exchange](http://www.ofx.org/)
+- [ISO 20022](https://www.iso20022.org/full_catalogue_1_0.page)
 
 
 
-##### Advantages in contrast to CSV format:
-
-- Clear file structure and formatting (number, dates, …)
-- Native support for nested loops, optional fields and sections
-- Definition of fields and tree structure via XML-Schema
-- Built in documentation in multiple languages
-- Automatic validation of file structure and field content against XML-Schema
+FundsXML is focusing on exchanging standardized data in the asset management industry. Developed and maintained by international asset managers, fund associations and service providers since 2001.
 
 
 
@@ -53,7 +45,7 @@ If you have any questions (or found a bug) feel free to raise an Issue.
 
 ## Java
 
-1. [Simple Create and Read File.](https://github.com/karlkauc/FundsXML/tree/master/codeExamples/java/V413) 
+1. [Simple Create and Read File.](https://github.com/karlkauc/FundsXML/tree/master/codeExamples/java/V413)  
    Version: 4.1.3  
    Build tool: Gradle   
 2. 
