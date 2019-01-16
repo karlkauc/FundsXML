@@ -79,11 +79,14 @@ public class ReadFundsXMLFile {
                     for (PositionType positionType : portfolioType.getPositions().getPositionArray()) {
                         System.out.println(StringUtils.rightPad("[" + positionCount + "] Position Unique ID", holdingsPad, '.') + ": " + positionType.getUniqueID());
 
+
                         for (AssetType assetType: assetArray) {
                             if (assetType.getUniqueID().equals(positionType.getUniqueID())) {
+                                System.out.println(StringUtils.rightPad("[" + positionCount + "] Position Asset Type", holdingsPad, '.') + ": " + assetType.getAssetType());
                                 System.out.println(StringUtils.rightPad("[" + positionCount + "] Position Name", holdingsPad, '.') + ": " + assetType.getName());
                             }
                         }
+                        System.out.println(StringUtils.rightPad("[" + positionCount + "] Position Volume", holdingsPad, '.') + ": " + positionType.getTotalValue().getAmountArray(0).getStringValue());
 
                         positionCount++;
                         System.out.println(StringUtils.rightPad("", holdingsPad, "-"));

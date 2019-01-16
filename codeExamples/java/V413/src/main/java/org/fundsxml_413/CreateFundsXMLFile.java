@@ -18,6 +18,7 @@
 package org.fundsxml_413;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.xmlbeans.XmlCursor;
 import org.fundsxml.*;
 import org.fundsxml.FundsXML4Document.FundsXML4.Funds;
@@ -36,6 +37,11 @@ public class CreateFundsXMLFile {
         System.out.println("Creating FundsXML Document");
 
         final String fileName = "FundsXML_431.xml";
+
+        // Random Volume figures
+        Float fundVolume = RandomUtils.nextFloat(1000000, 99999999);
+        Float position1Volume = RandomUtils.nextFloat(0, 1000000);
+        Float position2Volume = fundVolume - position1Volume;
 
         Calendar contentDate = Calendar.getInstance();
         contentDate.set(Calendar.YEAR, 2018);
@@ -90,7 +96,7 @@ public class CreateFundsXMLFile {
         FundAmountType.Amount amount = fundAmountType.addNewAmount();
         amount.setCcy("EUR");
         amount.setIsFundCcy(true);
-        amount.setBigDecimalValue(new BigDecimal(30000000));
+        amount.setBigDecimalValue(new BigDecimal(fundVolume));
 
         // Portfolio
         Portfolios portfolios = fundDynamicDataType.addNewPortfolios();
@@ -114,7 +120,7 @@ public class CreateFundsXMLFile {
         position1.setUniqueID(uniqueID1);
         FundAmountType totalValPos1 = position1.addNewTotalValue();
         FundAmountType.Amount pos1Amount = totalValPos1.addNewAmount();
-        pos1Amount.setBigDecimalValue(new BigDecimal(200000.05));
+        pos1Amount.setBigDecimalValue(new BigDecimal(position1Volume));
         pos1Amount.setCcy("EUR");
         position1.addNewBond().setNominal(new BigDecimal(100));
 
@@ -136,7 +142,7 @@ public class CreateFundsXMLFile {
         position2.setUniqueID(uniqueID2);
         FundAmountType totalValPos2 = position2.addNewTotalValue();
         FundAmountType.Amount pos2Amount = totalValPos2.addNewAmount();
-        pos2Amount.setBigDecimalValue(new BigDecimal(123456789.01));
+        pos2Amount.setBigDecimalValue(new BigDecimal(position2Volume));
         pos2Amount.setCcy("EUR");
         position2.addNewEquity().setUnits(new BigDecimal(333));
 

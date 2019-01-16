@@ -1,7 +1,9 @@
 # FundsXML 4.3.1 Example
 
 This is an example of creating and reading FundsXML Files with [XML Beans](https://xmlbeans.apache.org/).  
-A compiled schema (jar) is provided on [the FundsXML schema site](http://schema.fundsxml.org) and als library in this project.
+A compiled schema (jar) is provided on [the FundsXML schema site](http://schema.fundsxml.at) and als library in this project.
+
+Two fund holdings (1 bond, 1 equity) are created on the fly randomly.   
 
 ## basics
 * Language:   Java
