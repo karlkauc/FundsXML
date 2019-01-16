@@ -17,10 +17,18 @@
 
 package org.fundsxml_413;
 
+import com.google.common.base.Stopwatch;
+
 public class StartExample {
 
     public static void main(String[] args) {
-       CreateFundsXMLFile.main();
-       ReadFundsXMLFile.main();
+        Stopwatch stopwatch = Stopwatch.createStarted();
+
+        CreateFundsXMLFile.main();
+        ReadFundsXMLFile.main();
+
+        stopwatch.stop();
+        System.out.println("time: " + stopwatch);
+
     }
 }

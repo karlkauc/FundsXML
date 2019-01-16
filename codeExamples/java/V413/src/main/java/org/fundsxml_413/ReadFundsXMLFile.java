@@ -67,8 +67,6 @@ public class ReadFundsXMLFile {
                 }
 
                 int holdingsPad = fundPad + 10; // only for formating
-
-
                 // print fund holdings
                 for (PortfolioType portfolioType : fund.getFundDynamicData().getPortfolios().getPortfolioArray()) {
                     System.out.println(StringUtils.rightPad("Position NAV Date", holdingsPad, '.') + ": " + portfolioType.getNavDate());
@@ -78,7 +76,6 @@ public class ReadFundsXMLFile {
                     int positionCount = 0;
                     for (PositionType positionType : portfolioType.getPositions().getPositionArray()) {
                         System.out.println(StringUtils.rightPad("[" + positionCount + "] Position Unique ID", holdingsPad, '.') + ": " + positionType.getUniqueID());
-
 
                         for (AssetType assetType: assetArray) {
                             if (assetType.getUniqueID().equals(positionType.getUniqueID())) {
