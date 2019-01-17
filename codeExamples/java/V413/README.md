@@ -17,6 +17,14 @@ Two fund holdings (1 bond, 1 equity) are created on the fly randomly.
 | runs on all major operating systems | |
 | schema validity can be checked inside the source code | |
 
+The programm is running on Java 11.  
+If you want to run it on Java 8 - remove the module-info.java file an change the sourceCompatibility and targetCompatibility from 11 to 1.8  
+
+```Java
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+```
+
 ## how to run the example
 This example uses [gradle](https://gradle.org/) as build tool.  
 Clone the source code or download it as a zip file. 
