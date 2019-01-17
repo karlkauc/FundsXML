@@ -18,6 +18,7 @@
 package org.fundsxml_413;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.xmlbeans.XmlOptions;
 import org.fundsxml.*;
 
 import java.io.File;
@@ -26,6 +27,10 @@ public class ReadFundsXMLFile {
 
     public static void main(String... args) {
         System.out.println("Reading FundsXML Document");
+
+        XmlOptions opts = new XmlOptions();
+        opts.setCharacterEncoding("UTF-8");
+
 
         File inputXMLFile = new File("FundsXML_431.xml");
         try {

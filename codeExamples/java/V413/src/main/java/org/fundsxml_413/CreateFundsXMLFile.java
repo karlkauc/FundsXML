@@ -39,9 +39,9 @@ public class CreateFundsXMLFile {
         final String fileName = "FundsXML_431.xml";
 
         // Random Volume figures
-        Float fundVolume = RandomUtils.nextFloat(1000000, 99999999);
-        Float position1Volume = RandomUtils.nextFloat(0, 1000000);
-        Float position2Volume = fundVolume - position1Volume;
+        float fundVolume = RandomUtils.nextFloat(1000000, 99999999);
+        float position1Volume = RandomUtils.nextFloat(0, 1000000);
+        float position2Volume = fundVolume - position1Volume;
 
         Calendar contentDate = Calendar.getInstance();
         contentDate.set(Calendar.YEAR, 2018);
