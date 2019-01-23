@@ -80,11 +80,6 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="ShareClassRatio" type="PercentageType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Weight of the share class within the fund in percentage (sum is 100%)</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="Distributions" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Dividend related data</xs:documentation>
