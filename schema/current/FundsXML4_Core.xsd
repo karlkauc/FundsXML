@@ -16,7 +16,7 @@
 					<xs:sequence>
 						<xs:element name="Ticker" type="Text32Type" minOccurs="0">
 							<xs:annotation>
-								<xs:documentation>Bloomberg Ticker</xs:documentation>
+								<xs:documentation>Bloomberg Corporate Ticker</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="Exchange" type="Text16Type" minOccurs="0">
@@ -973,6 +973,7 @@ R ... Reinvesting</xs:documentation>
 							<xs:enumeration value="WM"/>
 							<xs:enumeration value="GERMAN CBCL"/>
 							<xs:enumeration value="CIC"/>
+							<xs:enumeration value="CFI"/>
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:element>
