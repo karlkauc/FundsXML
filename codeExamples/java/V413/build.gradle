@@ -1,21 +1,7 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath 'org.javamodularity:moduleplugin:1.1.1'
-    }
-}
-
 plugins {
     id 'java'
     id 'application'
 }
-
-apply plugin: 'org.javamodularity.moduleplugin'
 
 group 'org.fundsxmlImport'
 version '1.0-SNAPSHOT'
