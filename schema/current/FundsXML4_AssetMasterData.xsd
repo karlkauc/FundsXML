@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2017 sp1 (http://www.altova.com) by Peter Raffelsberger (Private) -->
-<!-- Mit XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com) von XMLSpy2013 (s IT Solutions AT Spardat GmbH z.B. Buchhaltung) bearbeitet -->
+<!-- Mit XMLSpy v2015 rel. 3 (http://www.altova.com) von Peter Raffelsberger (Pioneer Investments Austria) bearbeitet -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
 	<xs:include schemaLocation="FundsXML4_Core.xsd"/>
 	<xs:include schemaLocation="FundsXML4_CountrySpecificData.xsd"/>
@@ -114,20 +114,23 @@ CO = Commodity</xs:documentation>
 					<xs:documentation xml:lang="de">Art des Wertpapieres:
 EQ = Aktie
 BO = Rente
-FU = Fonds
-DE = Derivativ
-FE = Devisentermine
-IN = Indexzertifikate
+SC = Fonds/Anteilscheinklasse
+WA = Warrants
+CE = Zertifikat
+OP = Option
+FU = Future
+FX = FX-Forward
 SW = Swap
-AC = Konten
+RP = Repos 
 FT = Festgelder
 CM = Callgelder
+AC = Konten
+FE = Gebühren
 RE = Immobilie
-CB = Convertible Bonds
-CS = Credit Default Swap
-IX = Index
-RP = Repos                
-BM = Benchmark</xs:documentation>
+RT = REIT
+LO = Darlehen
+RI = Rechte
+CO = Commodity</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="AssetTypeType">
@@ -324,6 +327,7 @@ EN ... Energy
 EV ... Environmental
 EX ... Exotic
 FR ... Freights
+IN ... Index
 ME ... Metals</xs:documentation>
 							</xs:annotation>
 							<xs:simpleType>
@@ -437,7 +441,7 @@ N = Nominale</xs:documentation>
 							<xs:simpleType>
 								<xs:restriction base="xs:string">
 									<xs:enumeration value="P"/>
-									<xs:enumeration value="N"/>
+									<xs:enumeration value="U"/>
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:element>
