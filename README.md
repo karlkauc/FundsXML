@@ -73,5 +73,7 @@ If you have any questions (or found a bug) feel free to raise an Issue.
   Austrian site of the FundsXML standard. Local newsletter. German speaking community. 
 - [schema.fundsxml.at](http://schema.fundsxml.at)
   Permalinks for all supported schema versions. Can be used for schema validation. 
-- [www.xml-tools.net/fundsxml/schemaviewer.html](http://www.xml-tools.net/fundsxml/schemaviewer.html)
-  Online schema viewer (browser based). 
+- [www.xsd-viewer.online/fundsxml/releases](https://www.xsd-viewer.online/fundsxml/releases?utm_source=github&utm_medium=fundsxml-readme)
+  Online schema viewer (browser based): every FundsXML release as tree and diagram, with the changes between versions.
+- [www.xml-viewer.online/validate/fundsxml](https://www.xml-viewer.online/validate/fundsxml?utm_source=github&utm_medium=fundsxml-readme)
+  Online validator: check a FundsXML file against the official schema and export the errors to Excel. 
